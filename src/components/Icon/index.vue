@@ -3,10 +3,12 @@
 </template>
 
 <script>
+import Copy from '@/components/Icon/Copy.vue'
 import Loading from '@/components/Icon/Loading'
 
 export default {
   components: {
+    Copy,
     Loading
   },
   props: {
