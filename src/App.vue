@@ -8,7 +8,7 @@ import { watch } from 'vue'
 import ModalFactory from '@/components/ModalFactory/index.vue'
 import { useRoute, useRouter } from 'vue-router'
 import services from '@/services'
-import { setCurrentUser } from '../store/user'
+import { setCurrentUser } from '@/store/user'
 
 export default {
   components: { ModalFactory },

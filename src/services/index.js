@@ -2,7 +2,7 @@ import axios from 'axios'
 import AuthService from './auth'
 import router from '@/router'
 import UsersService from './users'
-import { setGlobalLoading } from '../../store/global'
+import { setGlobalLoading } from '@/store/global'
 
 const API_ENVS = {
   production: '',
