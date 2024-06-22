@@ -5,11 +5,13 @@
 <script>
 import Copy from '@/components/Icon/Copy.vue'
 import Loading from '@/components/Icon/Loading'
+import ChevronDown from '@/components/Icon/ChevronDown.vue'
 
 export default {
   components: {
     Copy,
-    Loading
+    Loading,
+    ChevronDown,
   },
   props: {
     name: {
