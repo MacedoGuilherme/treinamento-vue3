@@ -8,5 +8,15 @@ module.exports = {
   },
   rules: {
     strict: 'off'
-  }
+  },
+  overrides: [
+    {
+      files: [
+        '**/*.spec.js'
+      ],
+      env: {
+        jest: true
+      }
+    }
+  ]
 }
