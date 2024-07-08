@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between">
+  <div class="flex justify-between" id="modal-login">
     <h1 class="text-4xl font-black text-gray-800">Entre na sua conta</h1>
 
     <button @click="close" class="text-4xl text-gray-600 focus:outline-none">
@@ -14,13 +14,14 @@
         <input
           v-model="state.email.value"
           type="email"
+          id="email-field"
           :class="{
             'border-brand-danger': !!state.email.errorMessage
           }"
           class="block w-full px-4 py-3 mt-1 text-lg bg-gray-100 border-2 border-transparent rounded"
           placeholder="jane.dae@gmail.com"
         >
-        <span v-if="!!state.email.errorMessage" class="block font-medium text-brand-danger">
+        <span v-if="!!state.email.errorMessage" id="email-error" class="block font-medium text-brand-danger">
           {{ state.email.errorMessage }}
         </span>
       </label>
@@ -30,6 +31,7 @@
         <input
           v-model="state.password.value"
           type="password"
+          id="password-field"
           :class="{
             'border-brand-danger': !!state.password.errorMessage
           }"
@@ -44,6 +46,7 @@
       <button
         :disabled="state.isLoading"
         type="submit"
+        id="submit-button"
         :class="{
           'opacity-50': state.isLoading,
         }"
